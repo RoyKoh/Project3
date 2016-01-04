@@ -2,6 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Add to Home">
     <title>Add To Home</title>
     <link rel="stylesheet" type="text/css" href="../../style/addtohomescreen.css">
     <script src="../../src/addtohomescreen.js"></script>
@@ -10,8 +13,21 @@
     </script>
     </head>
   <body>
-    hello world
-  
+    <div id='updateDiv'></div>
+
+    <script type = "text/javascript">
+    function displayDate()
+    {
+     var comment = "woohooo! go me.";
+     var newParagraph = document.createElement('p');
+     newParagraph.textContent = comment;
+     document.getElementById("updateDiv").appendChild(newParagraph);
+    }
+    displayDate()
+
+    </script>
+
+  window.navigator.standalone
 
   </body>
 </html>
