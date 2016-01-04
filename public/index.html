@@ -18,7 +18,7 @@
     <script type = "text/javascript">
     function displayDate()
     {
-     var comment = "woohooo! go me.";
+     var comment = window.navigator.standalone;
      var newParagraph = document.createElement('p');
      newParagraph.textContent = comment;
      document.getElementById("updateDiv").appendChild(newParagraph);
@@ -26,8 +26,6 @@
     displayDate()
 
     </script>
-
-  window.navigator.standalone
 
   </body>
 </html>
