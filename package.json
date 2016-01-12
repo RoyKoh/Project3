@@ -35,7 +35,6 @@
   "scripts": {
     "test": "gulp test:local",
     "start": "node app.js",
-    "postinstall": "bower install && gulp",
     "lint": "gulp lint"
   },
   "engines": {
