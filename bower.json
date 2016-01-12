@@ -1,28 +1,20 @@
 {
-  "name": "add-to-homescreen",
-  "version": "3.2.2",
-  "homepage": "https://github.com/cubiq/add-to-homescreen",
-  "authors": [
-    "Matteo Spinelli <matteo@cubiq.org> (http://cubiq.org)"
-  ],
-  "description": "Add to homescreen call out for iOS and Android",
-  "main": [
-    "src/addtohomescreen.min.js",
-    "style/addtohomescreen.css"
-  ],
-  "ignore": [
-    "demos",
-    "imgs",
-    "README.md"
-  ],
-  "keywords": [
-    "iPhone",
-    "iPod",
-    "iPad",
-    "iOS6",
-    "iOS7",
-    "android",
-    "mobile"
-  ],
-  "license": "MIT"
+  "name": "polymer-starter-kit",
+  "private": true,
+  "dependencies": {
+    "iron-elements": "PolymerElements/iron-elements#^1.0.0",
+    "neon-elements": "PolymerElements/neon-elements#^1.0.0",
+    "page": "visionmedia/page.js#~1.6.4",
+    "paper-elements": "PolymerElements/paper-elements#^1.0.1",
+    "platinum-elements": "PolymerElements/platinum-elements#^1.1.0",
+    "polymer": "Polymer/polymer#^1.2.0",
+    "paper-menu": "PolymerElements/paper-menu#4fecb43601"
+  },
+  "devDependencies": {
+    "web-component-tester": "*"
+  },
+  "ignore": [],
+  "resolutions": {
+    "paper-menu": "4fecb43601"
+  }
 }
