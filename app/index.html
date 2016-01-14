@@ -17,6 +17,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="generator" content="Polymer Starter Kit" />
   <title>Polymer Starter Kit</title>
+  <!-- Insert custom elements into Chat Page -->
+  <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+
   <!-- Place favicon.ico in the `app/` directory -->
 
   <!-- Chrome for Android theme color -->
@@ -60,6 +63,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 </head>
 
 <body unresolved class="fullbleed layout vertical">
+  <script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
+  <script src="https://cdn.socket.io/socket.io-1.4.3.js"></script>
   <span id="browser-sync-binding"></span>
   <template is="dom-bind" id="app">
 
@@ -87,6 +92,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <a data-route="contact" href="{{baseUrl}}contact">
             <iron-icon icon="mail"></iron-icon>
             <span>Contact</span>
+          </a>
+          <a data-route="books" href="/books">
+            <iron-icon icon="book"></iron-icon>
+            <span>Chat</span>
           </a>
         </paper-menu>
       </paper-scroll-header-panel>
@@ -178,6 +187,27 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               </paper-material>
             </section>
 
+            <section data-route="books">
+              <paper-material elevation="1">
+                <p>Welcome to Kopi-Chat</p>
+                <!-- This Div will Contain All the Chats -->
+                <div id="chatsContainer"></div>
+                <!-- A text field to let user enter his/her name -->
+                <input type="text" id="username" placeholder="Enter your name...">
+                <br>
+                <!-- This is where we write our message -->
+                <input type="text" id="myMsg" placeholder="Write your message...">
+                <br>
+                <!-- And this is our "Send Button" -->
+                <button id="sendBtn">Send</button>
+                <link rel="stylesheet" href="css/style.css" type="text/css">
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+
+
+              </paper-material>
+            </section>
+
           </iron-pages>
         </div>
       </paper-scroll-header-panel>
@@ -208,6 +238,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   <!-- build:js scripts/app.js -->
   <script src="scripts/app.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
   <!-- endbuild-->
 </body>
 

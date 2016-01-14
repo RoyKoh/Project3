@@ -1,0 +1,28 @@
+body {
+background: orange;
+}
+
+#chatsContainer {
+  height: 300px;
+  width: 300px;
+  border: 2px inset #eee;
+  overflow: auto;
+  margin-bottom: 5px;
+  background: #FFF;
+}
+
+#myMsg,
+#sendBtn,
+#username {
+  width: 300px;
+  height: 30px;
+  margin-top: 5px
+}
+
+.msgfield {
+  padding: 5px;
+  background: skyblue;
+  margin: 10px;
+  border-radius: 5px;
+  border: 3px outset #CED4F5;
+}
